@@ -122,9 +122,23 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 ---
 
-## 📸 Dashboard Preview
+### 🔹 Full Dashboard
 
-![Dashboard Screenshot](cm_Dash.png)
+![Dashboard](cm_Dash.png)
+
+---
+
+### 🟢 Profit Scenario (High Performance)
+
+![Profit Positive](profit-positive.png)
+
+---
+
+### 🔴 Loss Scenario (Business Issue Detection)
+
+![Profit Negative](profit-negative.png)
+
+
 
 ---
 
