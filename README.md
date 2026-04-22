@@ -69,8 +69,28 @@ It provides insights into **revenue, profit, customer behavior, and product perf
 ## 📐 DAX Measure Used
 
 ```DAX
+Total Sales = SUM(Details[Amount])
+
+Total Profit = SUM(Details[Profit])
+
+Total Quantity = SUM(Details[Quantity])
+
 Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
+
+Average Order Value = DIVIDE(SUM(Details[Amount]), DISTINCTCOUNT(Orders[Order ID]), 0)
+
+Profit per Order = DIVIDE(SUM(Details[Profit]), DISTINCTCOUNT(Orders[Order ID]), 0)
+
+Sales per Unit = DIVIDE(SUM(Details[Amount]), SUM(Details[Quantity]), 0)
+
+Profit Category = 
+IF(
+    [Profit Margin %] > 0,
+    "Profit",
+    IF([Profit Margin %] < 0, "Loss", "Neutral")
+)
 ```
+
 
 ---
 
@@ -122,7 +142,7 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 ---
 
-### 🔹 Full Dashboard
+### 🔹 Dashboard Preview
 
 ![Dashboard](cm_Dash.png)
 
@@ -130,13 +150,13 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 ### 🟢 Profit Scenario (High Performance)
 
-![Profit Positive](profit-positive.png)
+![Profit Positive](profit.png)
 
 ---
 
 ### 🔴 Loss Scenario (Business Issue Detection)
 
-![Profit Negative](profit-negative.png)
+![Profit Negative](loss.png)
 
 
 
