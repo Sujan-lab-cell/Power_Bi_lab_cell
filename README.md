@@ -124,7 +124,7 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 ## 📸 Dashboard Preview
 
-![Dashboard Screenshot](dashboard.png)
+![Dashboard Screenshot](cm_Dash.png)
 
 ---
 
