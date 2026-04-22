@@ -1,5 +1,23 @@
 # 📊 E-commerce Sales Dashboard (Power BI)
 
+## 📌 Table of Contents
+
+* [Overview](#-overview)
+* [Objective](#-objective)
+* [Dataset Description](#-dataset-description)
+* [Key Metrics (KPIs)](#-key-metrics-kpis)
+* [DAX Measure](#-dax-measure-used)
+* [Dashboard Features](#-dashboard-features)
+* [Visualizations](#-visualizations)
+* [Key Features](#-key-features)
+* [Key Insights](#-key-insights)
+* [Tools & Technologies](#-tools--technologies)
+* [Dashboard Preview](#-dashboard-preview)
+* [Conclusion](#-conclusion)
+* [Author](#-author)
+
+---
+
 ## 🔹 Overview
 
 This project is an **interactive Power BI dashboard** designed to analyze e-commerce sales performance.
@@ -66,31 +84,14 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 ---
 
-### 📊 Visualizations
+## 📊 Visualizations
 
 * **Profit Margin by State**
-
-  * Highlights profitable (green) and loss-making (red) regions
-
 * **Profit by Month**
-
-  * Shows monthly profit trends
-
 * **Quantity by Category**
-
-  * Distribution of sales across categories
-
 * **Quantity by Payment Mode**
-
-  * Customer payment preferences
-
 * **Profit by Sub-Category**
-
-  * Identifies high and low performing products
-
 * **Sales vs Profit by State**
-
-  * Compares revenue and profitability
 
 ---
 
@@ -98,26 +99,25 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 * ✔ Interactive dashboard with slicers
 * ✔ Conditional formatting (Red–Yellow–Green logic)
-* ✔ Clean and professional UI design
-* ✔ Real-time filtering and insights
-* ✔ Business-focused analytics
+* ✔ Clean UI design
+* ✔ Real-time filtering
 
 ---
 
 ## 🧠 Key Insights
 
-* Some regions are **loss-making despite good sales**
-* Profit margins vary significantly across states
-* Certain product categories generate **higher volume but lower profit**
-* Payment modes like **COD and UPI dominate**
-* Monthly profit trends show **fluctuations in business performance**
+* Some regions are **loss-making despite high sales**
+* Profit margins vary across states
+* Certain categories have **high volume but low profit**
+* COD & UPI are most used payment modes
+* Monthly profit trends show fluctuations
 
 ---
 
 ## 🚀 Tools & Technologies
 
 * Power BI
-* DAX (Data Analysis Expressions)
+* DAX
 * Data Modeling
 
 ---
@@ -130,16 +130,14 @@ Profit Margin % = DIVIDE(SUM(Details[Profit]), SUM(Details[Amount]), 0)
 
 ## 📌 Conclusion
 
-This dashboard helps businesses:
+This dashboard helps in:
 
-* Identify **problem areas**
-* Improve **profitability**
-* Make **data-driven decisions**
+* Identifying **loss-making regions**
+* Improving **business decisions**
+* Enhancing **profitability**
 
 ---
 
 ## 👤 Author
 
 **Sujan KS**
-
----
